@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGAMENTOS NO PIX</title>
+</head>
+<body>
+    <h1>Pagamentos Recebidos no PIX</h1>
+    <table border="1">
+        <tr>
+            <th>Data Entrada</th>
+            <th>Cliente</th>
+            <th>Valor</th>
+            <th>Descrição</th>
+        </tr>
+        {% for transacao in data %}
+            <tr>
+                <td>{{ transacao['dataEntrada'] }}</td>
+                <td>{{ transacao['descricao'] }}</td>
+                <td>R$ {{ transacao['valor'] }}</td>
+                <td>{{ transacao['titulo'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p>Total: {{ total_text }}</p>
+</body>
+</html>
