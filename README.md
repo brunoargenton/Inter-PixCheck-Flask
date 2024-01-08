@@ -55,5 +55,3 @@ PixCheck é uma ferramenta que oferece uma alternativa para contornar as taxas a
     <li>A biblioteca Requests é utilizada para fazer requisições HTTP.</li>
     <li>Desenvolvido por Bruno Argenton.</li>
 </ul>
-
-<p>Sinta-se à vontade para contribuir ou abrir problemas se encontrar algum problema!</p>
